@@ -52,8 +52,7 @@
 */		
 		@try {
 			//debug_NSLog(@"Splitview unloading ??? title = %@", self.title);
-			[[NSNotificationCenter defaultCenter] removeObserver:self /*forKeyPath:UIApplicationWillChangeStatusBarOrientationNotification */];
-			[[NSNotificationCenter defaultCenter] removeObserver:self /*forKeyPath:UIApplicationDidChangeStatusBarOrientationNotification */];
+			[[NSNotificationCenter defaultCenter] removeObserver:self];
 		}
 		@catch (NSException * e) {
 			debug_NSLog(@"IntelligentSplitViewController DE-OBSERVING CRASHED: %@ ... error:%@", self.title, [e description]);
