@@ -1,0 +1,252 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* IntelSplitDemoAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {719, 566}}";
+			sepNavSelRange = "{201, 0}";
+			sepNavVisRange = "{0, 1299}";
+		};
+	};
+	1D3623250D0F684500981E51 /* IntelSplitDemoAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {908, 2301}}";
+			sepNavSelRange = "{3239, 11}";
+			sepNavVisRange = "{2248, 1484}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* IntelSplitDemo */ = {
+		activeExec = 0;
+		executables = (
+			37A18D25138A14C900ED157B /* IntelSplitDemo */,
+		);
+	};
+	28216C950DB411BC00E5133A /* MasterViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {593, 546}}";
+			sepNavSelRange = "{129, 0}";
+			sepNavVisRange = "{0, 526}";
+		};
+	};
+	28216C960DB411BC00E5133A /* MasterViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {663, 702}}";
+			sepNavSelRange = "{1242, 0}";
+			sepNavVisRange = "{278, 1014}";
+		};
+	};
+	284F763F10B34E8A00D7BA5B /* DetailViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {600, 546}}";
+			sepNavSelRange = "{434, 0}";
+			sepNavVisRange = "{0, 440}";
+		};
+	};
+	284F764010B34E8A00D7BA5B /* DetailViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1510, 1040}}";
+			sepNavSelRange = "{93, 147}";
+			sepNavVisRange = "{0, 1295}";
+		};
+	};
+	28A0AB4B0D9B1048005BE974 /* IntelSplitDemo_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {712, 546}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 197}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 37A18D25138A14C900ED157B /* IntelSplitDemo */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* IntelSplitDemo */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* IntelSplitDemo */,
+		);
+		breakpoints = (
+			37A18DC0138A2B4200ED157B /* IntelSplitDemoAppDelegate.m:121 */,
+			37A18DC2138A2BAF00ED157B /* IntelSplitDemoAppDelegate.m:74 */,
+		);
+		codeSenseManager = 37A18D35138A14D700ED157B /* Code sense */;
+		executables = (
+			37A18D25138A14C900ED157B /* IntelSplitDemo */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					395,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 327824175;
+			PBXWorkspaceStateSaveDate = 327824175;
+		};
+		perUserProjectItems = {
+			37A18E38138A333B00ED157B /* PBXTextBookmark */ = 37A18E38138A333B00ED157B /* PBXTextBookmark */;
+			37A18E40138A343B00ED157B /* PBXTextBookmark */ = 37A18E40138A343B00ED157B /* PBXTextBookmark */;
+			37A18E41138A343B00ED157B /* PBXTextBookmark */ = 37A18E41138A343B00ED157B /* PBXTextBookmark */;
+			37A18E52138A34E000ED157B /* PBXTextBookmark */ = 37A18E52138A34E000ED157B /* PBXTextBookmark */;
+		};
+		sourceControlManager = 37A18D34138A14D700ED157B /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {593, 546}}";
+			sepNavSelRange = "{224, 0}";
+			sepNavVisRange = "{0, 478}";
+		};
+	};
+	37A18D25138A14C900ED157B /* IntelSplitDemo */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = IntelSplitDemo;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	37A18D34138A14D700ED157B /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	37A18D35138A14D700ED157B /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	37A18D36138A14DF00ED157B /* IntelligentSplitViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {754, 546}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 503}";
+		};
+	};
+	37A18D37138A14DF00ED157B /* IntelligentSplitViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {908, 2431}}";
+			sepNavSelRange = "{641, 0}";
+			sepNavVisRange = "{52, 1413}";
+		};
+	};
+	37A18DC0138A2B4200ED157B /* IntelSplitDemoAppDelegate.m:121 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 1D3623250D0F684500981E51 /* IntelSplitDemoAppDelegate.m */;
+		functionName = "-application:didFinishLaunchingWithOptions:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 121;
+		location = IntelSplitDemo;
+		modificationTime = 327824453.930559;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	37A18DC2138A2BAF00ED157B /* IntelSplitDemoAppDelegate.m:74 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 1D3623250D0F684500981E51 /* IntelSplitDemoAppDelegate.m */;
+		functionName = "-setupSplitViews";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 74;
+		location = IntelSplitDemo;
+		modificationTime = 327824453.930612;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	37A18E38138A333B00ED157B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* IntelSplitDemoAppDelegate.h */;
+		name = "IntelSplitDemoAppDelegate.h: 7";
+		rLen = 0;
+		rLoc = 201;
+		rType = 0;
+		vrLen = 1299;
+		vrLoc = 0;
+	};
+	37A18E40138A343B00ED157B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 284F764010B34E8A00D7BA5B /* DetailViewController.m */;
+		name = "DetailViewController.m: 6";
+		rLen = 147;
+		rLoc = 93;
+		rType = 0;
+		vrLen = 1295;
+		vrLoc = 0;
+	};
+	37A18E41138A343B00ED157B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 37A18D37138A14DF00ED157B /* IntelligentSplitViewController.m */;
+		name = "IntelligentSplitViewController.m: 15";
+		rLen = 0;
+		rLoc = 428;
+		rType = 0;
+		vrLen = 1335;
+		vrLoc = 0;
+	};
+	37A18E52138A34E000ED157B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 37A18D37138A14DF00ED157B /* IntelligentSplitViewController.m */;
+		name = "IntelligentSplitViewController.m: 20";
+		rLen = 0;
+		rLoc = 641;
+		rType = 0;
+		vrLen = 1413;
+		vrLoc = 52;
+	};
+}
