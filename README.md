@@ -16,8 +16,14 @@ Note, as we've mentioned, this view controller hierarchy does not exactly fit wi
 
 This class and the enclosed demo app assume that you are loading your tabBarController and splitViewControllers via Interface Builder (in a NIB/XIB file).  If you don't like using Interface Builder, then hopefully you know how to incorporate this class without much hand-holding.
 
+I've also included (as a submodule) a more extensive implementation demo/template from Ziophase, [IntelligentTemplate](https://www.github.com/ziophase/IntelligentTemplate).
+
 Change Log
 =========================
+- 	(6/16/11)  
+	
+	Added a more extensive template from Ziophase to help showcase more advanced controller hierarchies.  
+		
 - 	(5/23/11)  
 	
 	Added a demo application, to show you how I use it in my apps.  
