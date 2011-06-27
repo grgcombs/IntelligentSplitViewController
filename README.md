@@ -35,7 +35,7 @@ Change Log
 License
 =========================
 
-[Under a Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/)
+[Under a Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/)
 
 ![Creative Commons License Badge](http://i.creativecommons.org/l/by/3.0/88x31.png "Creative Commons Attribution")
 
