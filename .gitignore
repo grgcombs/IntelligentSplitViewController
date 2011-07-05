@@ -1,2 +1,5 @@
 *.mode1v3
 *.pbxuser
+build
+/IntelSplitDemo/IntelSplitDemo.xcodeproj/xcuserdata
+/IntelSplitDemo/IntelSplitDemo.xcodeproj/project.xcworkspace/xcuserdata
