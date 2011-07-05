@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,16 +14,16 @@
 		28216C970DB411BC00E5133A /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28216C960DB411BC00E5133A /* MasterViewController.m */; };
 		284F764110B34E8A00D7BA5B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284F764010B34E8A00D7BA5B /* DetailViewController.m */; };
 		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
+		372BDEF513C2CC3A00D40544 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 372BDEF713C2CC3A00D40544 /* SecondView.xib */; };
+		372BDEF813C2CC5300D40544 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 372BDEFA13C2CC5300D40544 /* FirstView.xib */; };
+		372BDEFB13C2CC5E00D40544 /* SplitViews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 372BDEFD13C2CC5E00D40544 /* SplitViews.xib */; };
+		372BDEFE13C2CC8B00D40544 /* Split-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 372BDF0013C2CC8B00D40544 /* Split-A.png */; };
+		372BDF0113C2CC9200D40544 /* Split-A@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 372BDF0313C2CC9200D40544 /* Split-A@2x.png */; };
+		372BDF0413C2CC9800D40544 /* Split-B.png in Resources */ = {isa = PBXBuildFile; fileRef = 372BDF0613C2CC9800D40544 /* Split-B.png */; };
+		372BDF0713C2CC9C00D40544 /* Split-B@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 372BDF0913C2CC9C00D40544 /* Split-B@2x.png */; };
+		372BDF0A13C2CCA000D40544 /* Split-C.png in Resources */ = {isa = PBXBuildFile; fileRef = 372BDF0C13C2CCA000D40544 /* Split-C.png */; };
+		372BDF0D13C2CCA300D40544 /* Split-C@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 372BDF0F13C2CCA300D40544 /* Split-C@2x.png */; };
 		37A18D38138A14DF00ED157B /* IntelligentSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A18D37138A14DF00ED157B /* IntelligentSplitViewController.m */; };
-		37A18DA5138A254200ED157B /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37A18D9C138A254200ED157B /* FirstView.xib */; };
-		37A18DA6138A254200ED157B /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37A18D9D138A254200ED157B /* SecondView.xib */; };
-		37A18DA7138A254200ED157B /* Split-A.png in Resources */ = {isa = PBXBuildFile; fileRef = 37A18D9E138A254200ED157B /* Split-A.png */; };
-		37A18DA8138A254200ED157B /* Split-A@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37A18D9F138A254200ED157B /* Split-A@2x.png */; };
-		37A18DA9138A254200ED157B /* Split-B.png in Resources */ = {isa = PBXBuildFile; fileRef = 37A18DA0138A254200ED157B /* Split-B.png */; };
-		37A18DAA138A254200ED157B /* Split-B@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37A18DA1138A254200ED157B /* Split-B@2x.png */; };
-		37A18DAB138A254200ED157B /* Split-C.png in Resources */ = {isa = PBXBuildFile; fileRef = 37A18DA2138A254200ED157B /* Split-C.png */; };
-		37A18DAC138A254200ED157B /* Split-C@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37A18DA3138A254200ED157B /* Split-C@2x.png */; };
-		37A18DAD138A254200ED157B /* SplitViews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37A18DA4138A254200ED157B /* SplitViews.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,17 +39,17 @@
 		288765070DF74369002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28A0AB4B0D9B1048005BE974 /* IntelSplitDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntelSplitDemo_Prefix.pch; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		372BDEF613C2CC3A00D40544 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
+		372BDEF913C2CC5300D40544 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
+		372BDEFC13C2CC5E00D40544 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SplitViews.xib; sourceTree = "<group>"; };
+		372BDEFF13C2CC8B00D40544 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/Split-A.png"; sourceTree = "<group>"; };
+		372BDF0213C2CC9200D40544 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/Split-A@2x.png"; sourceTree = "<group>"; };
+		372BDF0513C2CC9800D40544 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/Split-B.png"; sourceTree = "<group>"; };
+		372BDF0813C2CC9C00D40544 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/Split-B@2x.png"; sourceTree = "<group>"; };
+		372BDF0B13C2CCA000D40544 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/Split-C.png"; sourceTree = "<group>"; };
+		372BDF0E13C2CCA300D40544 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/Split-C@2x.png"; sourceTree = "<group>"; };
 		37A18D36138A14DF00ED157B /* IntelligentSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntelligentSplitViewController.h; path = ../IntelligentSplitViewController.h; sourceTree = SOURCE_ROOT; };
 		37A18D37138A14DF00ED157B /* IntelligentSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IntelligentSplitViewController.m; path = ../IntelligentSplitViewController.m; sourceTree = SOURCE_ROOT; };
-		37A18D9C138A254200ED157B /* FirstView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FirstView.xib; path = Resources/FirstView.xib; sourceTree = "<group>"; };
-		37A18D9D138A254200ED157B /* SecondView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SecondView.xib; path = Resources/SecondView.xib; sourceTree = "<group>"; };
-		37A18D9E138A254200ED157B /* Split-A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Split-A.png"; path = "Resources/Split-A.png"; sourceTree = "<group>"; };
-		37A18D9F138A254200ED157B /* Split-A@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Split-A@2x.png"; path = "Resources/Split-A@2x.png"; sourceTree = "<group>"; };
-		37A18DA0138A254200ED157B /* Split-B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Split-B.png"; path = "Resources/Split-B.png"; sourceTree = "<group>"; };
-		37A18DA1138A254200ED157B /* Split-B@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Split-B@2x.png"; path = "Resources/Split-B@2x.png"; sourceTree = "<group>"; };
-		37A18DA2138A254200ED157B /* Split-C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Split-C.png"; path = "Resources/Split-C.png"; sourceTree = "<group>"; };
-		37A18DA3138A254200ED157B /* Split-C@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Split-C@2x.png"; path = "Resources/Split-C@2x.png"; sourceTree = "<group>"; };
-		37A18DA4138A254200ED157B /* SplitViews.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SplitViews.xib; path = Resources/SplitViews.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* IntelSplitDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "IntelSplitDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,15 +115,15 @@
 			isa = PBXGroup;
 			children = (
 				8D1107310486CEB800E47090 /* IntelSplitDemo-Info.plist */,
-				37A18DA4138A254200ED157B /* SplitViews.xib */,
-				37A18D9C138A254200ED157B /* FirstView.xib */,
-				37A18D9D138A254200ED157B /* SecondView.xib */,
-				37A18D9E138A254200ED157B /* Split-A.png */,
-				37A18D9F138A254200ED157B /* Split-A@2x.png */,
-				37A18DA0138A254200ED157B /* Split-B.png */,
-				37A18DA1138A254200ED157B /* Split-B@2x.png */,
-				37A18DA2138A254200ED157B /* Split-C.png */,
-				37A18DA3138A254200ED157B /* Split-C@2x.png */,
+				372BDEFD13C2CC5E00D40544 /* SplitViews.xib */,
+				372BDEFA13C2CC5300D40544 /* FirstView.xib */,
+				372BDEF713C2CC3A00D40544 /* SecondView.xib */,
+				372BDF0013C2CC8B00D40544 /* Split-A.png */,
+				372BDF0313C2CC9200D40544 /* Split-A@2x.png */,
+				372BDF0613C2CC9800D40544 /* Split-B.png */,
+				372BDF0913C2CC9C00D40544 /* Split-B@2x.png */,
+				372BDF0C13C2CCA000D40544 /* Split-C.png */,
+				372BDF0F13C2CCA300D40544 /* Split-C@2x.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -163,8 +163,11 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "IntelSplitDemo" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -187,15 +190,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37A18DA5138A254200ED157B /* FirstView.xib in Resources */,
-				37A18DA6138A254200ED157B /* SecondView.xib in Resources */,
-				37A18DA7138A254200ED157B /* Split-A.png in Resources */,
-				37A18DA8138A254200ED157B /* Split-A@2x.png in Resources */,
-				37A18DA9138A254200ED157B /* Split-B.png in Resources */,
-				37A18DAA138A254200ED157B /* Split-B@2x.png in Resources */,
-				37A18DAB138A254200ED157B /* Split-C.png in Resources */,
-				37A18DAC138A254200ED157B /* Split-C@2x.png in Resources */,
-				37A18DAD138A254200ED157B /* SplitViews.xib in Resources */,
+				372BDEF813C2CC5300D40544 /* FirstView.xib in Resources */,
+				372BDEF513C2CC3A00D40544 /* SecondView.xib in Resources */,
+				372BDEFE13C2CC8B00D40544 /* Split-A.png in Resources */,
+				372BDF0113C2CC9200D40544 /* Split-A@2x.png in Resources */,
+				372BDF0413C2CC9800D40544 /* Split-B.png in Resources */,
+				372BDF0713C2CC9C00D40544 /* Split-B@2x.png in Resources */,
+				372BDF0A13C2CCA000D40544 /* Split-C.png in Resources */,
+				372BDF0D13C2CCA300D40544 /* Split-C@2x.png in Resources */,
+				372BDEFB13C2CC5E00D40544 /* SplitViews.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +218,90 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		372BDEF713C2CC3A00D40544 /* SecondView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				372BDEF613C2CC3A00D40544 /* en */,
+			);
+			name = SecondView.xib;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		372BDEFA13C2CC5300D40544 /* FirstView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				372BDEF913C2CC5300D40544 /* en */,
+			);
+			name = FirstView.xib;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		372BDEFD13C2CC5E00D40544 /* SplitViews.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				372BDEFC13C2CC5E00D40544 /* en */,
+			);
+			name = SplitViews.xib;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		372BDF0013C2CC8B00D40544 /* Split-A.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				372BDEFF13C2CC8B00D40544 /* en */,
+			);
+			name = "Split-A.png";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		372BDF0313C2CC9200D40544 /* Split-A@2x.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				372BDF0213C2CC9200D40544 /* en */,
+			);
+			name = "Split-A@2x.png";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		372BDF0613C2CC9800D40544 /* Split-B.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				372BDF0513C2CC9800D40544 /* en */,
+			);
+			name = "Split-B.png";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		372BDF0913C2CC9C00D40544 /* Split-B@2x.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				372BDF0813C2CC9C00D40544 /* en */,
+			);
+			name = "Split-B@2x.png";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		372BDF0C13C2CCA000D40544 /* Split-C.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				372BDF0B13C2CCA000D40544 /* en */,
+			);
+			name = "Split-C.png";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		372BDF0F13C2CCA300D40544 /* Split-C@2x.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				372BDF0E13C2CCA300D40544 /* en */,
+			);
+			name = "Split-C@2x.png";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
@@ -250,9 +337,9 @@
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -264,10 +351,10 @@
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PREBINDING = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};

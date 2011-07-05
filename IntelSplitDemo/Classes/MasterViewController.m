@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	self.vcLabel.text = [NSString stringWithFormat:@"Master View in Split-%@", 
+	self.vcLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Master View in Split-%@", @""), 
 						 self.splitViewController.title];
 }
 

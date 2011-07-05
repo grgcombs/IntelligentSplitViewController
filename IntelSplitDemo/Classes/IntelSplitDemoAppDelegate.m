@@ -80,9 +80,9 @@
 	
 	NSArray *VCs = [[NSArray alloc] initWithObjects:self.aMasterVC, self.bMasterVC, self.cMasterVC, nil];
 	NSArray *names = [NSArray arrayWithObjects:
-					  @"A", 
-					  @"B",
-					  @"C", nil];
+					  NSLocalizedString(@"A", @""), 
+					  NSLocalizedString(@"B", @""),
+					  NSLocalizedString(@"C", @""), nil];
 	
 	NSMutableArray *splitViewControllers = [[NSMutableArray alloc] initWithCapacity:[VCs count]];
 	NSInteger index = 0;

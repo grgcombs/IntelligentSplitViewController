@@ -8,10 +8,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IntelSplitDemoAppDelegate.h"
 
 int main(int argc, char *argv[]) {
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-    int retVal = UIApplicationMain(argc, argv, nil, @"IntelSplitDemoAppDelegate");
+    int retVal = UIApplicationMain(argc, argv, nil, NSStringFromClass([IntelSplitDemoAppDelegate class]));
     [pool release];
     return retVal;
 }
