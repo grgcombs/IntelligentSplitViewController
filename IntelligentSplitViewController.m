@@ -1,6 +1,6 @@
 //
 //  IntelligentSplitViewController.m
-//  TexLege
+//  From TexLege by Gregory S. Combs
 //
 //  Released under the Creative Commons Attribution 3.0 Unported License
 //  Please see the included license page for more information.
@@ -56,6 +56,7 @@
 
 - (void)viewDidUnload {
 	//debug_NSLog(@"IntelligentSplitViewController unloaded: %@", self.title);
+
     [super viewDidUnload];
 }
 
