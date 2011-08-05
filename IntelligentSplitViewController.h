@@ -11,8 +11,6 @@
 #import <UIKit/UIKit.h>
 
 
-@interface IntelligentSplitViewController : UISplitViewController {
-
-}
+@interface IntelligentSplitViewController : UISplitViewController
 
 @end

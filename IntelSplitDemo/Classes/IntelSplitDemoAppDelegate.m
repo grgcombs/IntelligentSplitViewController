@@ -8,14 +8,10 @@
 //
 
 #import "IntelSplitDemoAppDelegate.h"
-#import "MasterViewController.h"
+#import "DemoMasterViewController.h"
 
 @implementation IntelSplitDemoAppDelegate
-
-@synthesize mainWindow;
-@synthesize tabBarController;
-@synthesize aMasterVC, bMasterVC, cMasterVC;
-
+@synthesize window = _window;
 
 #pragma mark -
 #pragma mark Convenience Methods / Accessors
@@ -32,21 +28,21 @@
 - (UINavigationController *) masterNavigationController {
 	UISplitViewController *split = [self splitViewController];
 	if (split && split.viewControllers && [split.viewControllers count])
-		return [split.viewControllers objectAtIndex:0];
+		return split.viewControllers[0];
 	return nil;
 }
 
 - (UINavigationController *) detailNavigationController {
 	UISplitViewController *split = [self splitViewController];
 	if (split && split.viewControllers && [split.viewControllers count]>1)
-		return [split.viewControllers objectAtIndex:1];
+		return split.viewControllers[1];
 	return nil;
 }
 
 - (UIViewController *) currentMasterViewController {
 	UINavigationController *nav = [self masterNavigationController];
 	if (nav && nav.viewControllers && [nav.viewControllers count])
-		return [nav.viewControllers objectAtIndex:0];
+		return nav.viewControllers[0];
 	return nil;
 }
 
@@ -58,7 +54,6 @@
 		return NO;
 	
 	if (![viewController isEqual:tbc.selectedViewController]) {
-		//debug_NSLog(@"About to switch tabs, popping to root view controller.");
 		UINavigationController *nav = [self detailNavigationController];
 		if (nav && [nav.viewControllers count]>1)
 			[nav popToRootViewControllerAnimated:YES];
@@ -71,57 +66,22 @@
 #pragma mark Setup App Tabs / Splits
 
 - (void)setupSplitViews {
-	NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"SplitViews" owner:self options:nil];
-
-	if (!nibObjects || [nibObjects count] == 0) {
-		NSLog(@"Error loading user interface NIB components! Can't find the nib file and can't continue this comical charade.");
-		exit(0);
-	}
-	
-	NSArray *VCs = [[NSArray alloc] initWithObjects:self.aMasterVC, self.bMasterVC, self.cMasterVC, nil];
-	NSArray *names = [NSArray arrayWithObjects:
-					  NSLocalizedString(@"A", @""), 
-					  NSLocalizedString(@"B", @""),
-					  NSLocalizedString(@"C", @""), nil];
-	
-	NSMutableArray *splitViewControllers = [[NSMutableArray alloc] initWithCapacity:[VCs count]];
-	NSInteger index = 0;
-	for (MasterViewController * controller in VCs) {
-		UISplitViewController * split = [controller splitViewController];
-		if (split) {
-			// THIS SETS UP THE TAB BAR ITEMS/IMAGES AND SET THE TAG FOR TABBAR_ITEM_TAGS
-			NSString *tabName = [names objectAtIndex:index];
-			UIImage *tabImage = [UIImage imageNamed:[NSString stringWithFormat:@"Split-%@.png", tabName]];
-			split.title = tabName;
-			UITabBarItem *tempTab = [[UITabBarItem alloc] initWithTitle:tabName 
-																  image:tabImage 
-																	tag:index];
-			split.tabBarItem = tempTab;
-			[tempTab release];
-			
-			[splitViewControllers addObject:split];
-		}
-		index++;
-	}
-	[self.tabBarController setViewControllers:splitViewControllers];
-	[splitViewControllers release];
-	[VCs release];
-
-	[self.mainWindow addSubview:self.tabBarController.view];	
-	[self.mainWindow makeKeyAndVisible];
-
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"IntelSplitDemo" bundle:[NSBundle  mainBundle]];
+    self.tabBarController = [storyboard instantiateViewControllerWithIdentifier:@"DemoTabController"];
+    self.window.rootViewController = self.tabBarController;
+	[self.window makeKeyAndVisible];
 }
 
 #pragma mark -
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    
-	// Set up the mainWindow and content view
-	UIWindow *localMainWindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.mainWindow = localMainWindow;
-	[localMainWindow release];
-	
+
+    if (!self.window)
+    {
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    }
+
 	[self setupSplitViews];
     
     return YES;
@@ -158,22 +118,6 @@
      Free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later.
      */
 	NSLog(@"LOW_MEMORY_WARNING");
-}
-
-- init {
-	if ((self = [super init])) {
-		// initialize  to nil
-		mainWindow = nil;
-	}
-	return self;
-}
-
-
-- (void)dealloc {
-    self.tabBarController = nil;
-    self.mainWindow = nil;
-	self.aMasterVC = self.bMasterVC = self.cMasterVC = nil;
-    [super dealloc];
 }
 
 @end

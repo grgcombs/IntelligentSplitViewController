@@ -11,19 +11,9 @@
 
 @class MasterViewController;
 
-@interface IntelSplitDemoAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
-    UIWindow *mainWindow;
-    UITabBarController *tabBarController;
-	MasterViewController *aMasterVC;
-	MasterViewController *bMasterVC;
-	MasterViewController *cMasterVC;	
-}
+@interface IntelSplitDemoAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate>
 
-@property (nonatomic, retain) IBOutlet UIWindow *mainWindow;
-@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
-@property (nonatomic, retain) IBOutlet MasterViewController *aMasterVC;
-@property (nonatomic, retain) IBOutlet MasterViewController *bMasterVC;
-@property (nonatomic, retain) IBOutlet MasterViewController *cMasterVC;
+@property (nonatomic, strong) IBOutlet UITabBarController *tabBarController;
 
 // Convenience Methods / Accessors
 @property (nonatomic, readonly) UISplitViewController *splitViewController;

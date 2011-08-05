@@ -20,6 +20,11 @@ I've also included (as a submodule) a more extensive implementation demo/templat
 
 Change Log
 =========================
+
+- 	(8/5/14)  
+
+	Refactored for iOS 7, storyboards, ARC, and more.  
+
 - 	(6/16/11)  
 	
 	Added a more extensive template from Ziophase to help showcase more advanced controller hierarchies.  

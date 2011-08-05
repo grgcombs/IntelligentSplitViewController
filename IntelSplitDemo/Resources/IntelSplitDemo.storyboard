@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="vkk-DZ-kCo">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Zi8-CU-PTG">
+            <objects>
+                <tabBarController storyboardIdentifier="DemoTabController" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vkk-DZ-kCo" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="TkW-Br-9Ue">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="D92-Wk-hz7" kind="relationship" relationship="viewControllers" id="Atf-iX-7ud"/>
+                        <segue destination="nb9-4g-LFE" kind="relationship" relationship="viewControllers" id="yhB-e7-vSC"/>
+                        <segue destination="ip5-ZT-VZk" kind="relationship" relationship="viewControllers" id="KTB-6A-Izt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hpF-hW-Fqn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3825" y="1298"/>
+        </scene>
+        <!--Master Nav A-->
+        <scene sceneID="kBo-Ka-wR2">
+            <objects>
+                <navigationController storyboardIdentifier="DemoMasterANavigationController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rtq-zJ-W8e" userLabel="Master Nav A" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="qEY-HX-nWA">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ssk-Lt-w0X" kind="relationship" relationship="rootViewController" id="Ynr-A3-OY0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="omg-DA-K2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1600" y="-754"/>
+        </scene>
+        <!--Detail Nav A-->
+        <scene sceneID="hNe-l7-Ao1">
+            <objects>
+                <navigationController storyboardIdentifier="DemoDetailANavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V1D-Mp-9e8" userLabel="Detail Nav A" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="KLI-2c-GIN">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1Kw-KU-EJk" kind="relationship" relationship="rootViewController" id="i7a-yl-hQH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R1e-3U-r5z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-564" y="-244"/>
+        </scene>
+        <!--Split A-->
+        <scene sceneID="ojk-3q-MfV">
+            <objects>
+                <splitViewController storyboardIdentifier="DemoSplitAController" title="A" useStoryboardIdentifierAsRestorationIdentifier="YES" id="D92-Wk-hz7" userLabel="Split A" customClass="IntelligentSplitViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="A" image="Split-A.png" id="lhd-SU-61L"/>
+                    <toolbarItems/>
+                    <connections>
+                        <segue destination="rtq-zJ-W8e" kind="relationship" relationship="masterViewController" id="zPb-Fw-RQW"/>
+                        <segue destination="V1D-Mp-9e8" kind="relationship" relationship="detailViewController" id="xER-ji-QlI"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Owq-If-zTn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2716" y="-356"/>
+        </scene>
+        <!--Master Nav B-->
+        <scene sceneID="cmc-xj-ag0">
+            <objects>
+                <navigationController storyboardIdentifier="DemoMasterBNavigationController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="exo-ts-TN4" userLabel="Master Nav B" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="acx-eC-wrb">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pkt-8R-dY9" kind="relationship" relationship="rootViewController" id="mAg-Fc-xc6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iTh-Ww-PSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1600" y="890"/>
+        </scene>
+        <!--Detail Nav B-->
+        <scene sceneID="IBp-e3-pi9">
+            <objects>
+                <navigationController storyboardIdentifier="DemoDetailBNavigationController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PHr-Sk-0Nw" userLabel="Detail Nav B" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="6It-ut-Sxu">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YZ8-Yq-kB3" kind="relationship" relationship="rootViewController" id="9xB-Rq-1WS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ad8-gW-ZYk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-419" y="1324"/>
+        </scene>
+        <!--Split B-->
+        <scene sceneID="tGD-yD-lVW">
+            <objects>
+                <splitViewController storyboardIdentifier="DemoSplitBController" title="B" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nb9-4g-LFE" userLabel="Split B" customClass="IntelligentSplitViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" title="B" image="Split-B.png" id="4Rk-Uo-c8V"/>
+                    <toolbarItems/>
+                    <connections>
+                        <segue destination="exo-ts-TN4" kind="relationship" relationship="masterViewController" id="DqV-pk-fPA"/>
+                        <segue destination="PHr-Sk-0Nw" kind="relationship" relationship="detailViewController" id="AYL-7p-vZp"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TYc-P1-qUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2690" y="1184"/>
+        </scene>
+        <!--Split C-->
+        <scene sceneID="ZLK-5y-GDG">
+            <objects>
+                <splitViewController storyboardIdentifier="DemoSplitCController" title="C" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ip5-ZT-VZk" userLabel="Split C" customClass="IntelligentSplitViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="2" title="C" image="Split-C.png" id="H5p-qi-ft1"/>
+                    <toolbarItems/>
+                    <connections>
+                        <segue destination="9gX-cD-BZh" kind="relationship" relationship="detailViewController" id="j8x-iC-JJa"/>
+                        <segue destination="Yf7-Zp-eKT" kind="relationship" relationship="masterViewController" id="000-85-6WK"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yUq-d5-ZKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2623" y="2590"/>
+        </scene>
+        <!--Master Nav C-->
+        <scene sceneID="zn1-Z3-Iwe">
+            <objects>
+                <navigationController storyboardIdentifier="DemoMasterCNavigationController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Yf7-Zp-eKT" userLabel="Master Nav C" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="6gX-cv-aAi">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="f1D-RN-5SB" kind="relationship" relationship="rootViewController" id="das-k0-fdK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uMQ-bp-t3z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1600" y="2494"/>
+        </scene>
+        <!--Detail Nav C-->
+        <scene sceneID="VcR-Uv-Hr0">
+            <objects>
+                <navigationController storyboardIdentifier="DemoDetailCNavigationController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9gX-cD-BZh" userLabel="Detail Nav C" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="R3Y-vB-Rjv">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7Qb-mp-kr5" kind="relationship" relationship="rootViewController" id="w6d-JN-08y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLD-qR-3cv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-426" y="3028"/>
+        </scene>
+        <!--Master A-->
+        <scene sceneID="Dt6-ds-ULS">
+            <objects>
+                <viewController storyboardIdentifier="DemoMasterAController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ssk-Lt-w0X" userLabel="Master A" customClass="DemoMasterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h6A-eS-kjN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" minimumScaleFactor="0.80000001192092896" id="dMb-7u-tO2">
+                                <rect key="frame" x="20" y="221" width="280" height="122"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="My orientation is correct, even when you change to another tab, rotate the device, then switch back to me ... see? Awesomeness.">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="Egu-q0-0aB">
+                                <rect key="frame" x="20" y="112" width="280" height="111"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="(A) MasterVC" id="ys8-5c-ZN2"/>
+                    <connections>
+                        <outlet property="viewLabel" destination="Egu-q0-0aB" id="1mz-bt-4dx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xb5-c4-nue" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1117" y="-676"/>
+        </scene>
+        <!--Detail A-->
+        <scene sceneID="DBx-mP-HiV">
+            <objects>
+                <viewController storyboardIdentifier="DemoDetailAController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1Kw-KU-EJk" userLabel="Detail A" customClass="DemoDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P3U-MJ-RQ3">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second View" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jxN-kg-74V">
+                                <rect key="frame" x="211" y="112" width="345" height="111"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My orientation is correct, even when you change to another tab, rotate the device, then switch back to me ... see? Awesomeness." lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" id="TfE-6d-w6b">
+                                <rect key="frame" x="211" y="221" width="345" height="127"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="(A) DetailVC" id="wC5-xS-yZn"/>
+                    <connections>
+                        <outlet property="viewLabel" destination="jxN-kg-74V" id="zEj-5R-gvz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vRP-aM-7vD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370" y="-166"/>
+        </scene>
+        <!--Detail B-->
+        <scene sceneID="L4X-bH-aak">
+            <objects>
+                <viewController storyboardIdentifier="DemoDetailBController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YZ8-Yq-kB3" userLabel="Detail B" customClass="DemoDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dJZ-V4-LK6">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second View" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="w2D-tJ-1ea">
+                                <rect key="frame" x="211" y="112" width="345" height="111"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My orientation is correct, even when you change to another tab, rotate the device, then switch back to me ... see? Awesomeness." lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" id="GSh-OH-p6L">
+                                <rect key="frame" x="211" y="221" width="345" height="127"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="(B) DetailVC" id="4zW-JY-nkz"/>
+                    <connections>
+                        <outlet property="viewLabel" destination="w2D-tJ-1ea" id="TcM-y0-8iv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nqb-V6-Whf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="508" y="1438"/>
+        </scene>
+        <!--Master B-->
+        <scene sceneID="47N-Wk-UYi">
+            <objects>
+                <viewController storyboardIdentifier="DemoMasterBController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pkt-8R-dY9" userLabel="Master B" customClass="DemoMasterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Anm-qI-931">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" minimumScaleFactor="0.80000001192092896" id="YyW-97-v8R">
+                                <rect key="frame" x="20" y="221" width="280" height="122"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="My orientation is correct, even when you change to another tab, rotate the device, then switch back to me ... see? Awesomeness.">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="iyy-BW-iZH">
+                                <rect key="frame" x="20" y="112" width="280" height="111"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="(B) MasterVC" id="Mz4-7H-uI6"/>
+                    <connections>
+                        <outlet property="viewLabel" destination="iyy-BW-iZH" id="qO6-gr-Llt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vMu-cn-5LH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1117" y="958"/>
+        </scene>
+        <!--Master C-->
+        <scene sceneID="rNS-e5-gUh">
+            <objects>
+                <viewController storyboardIdentifier="DemoMasterCController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f1D-RN-5SB" userLabel="Master C" customClass="DemoMasterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XSH-5U-dPm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" minimumScaleFactor="0.80000001192092896" id="KRt-RT-eEv">
+                                <rect key="frame" x="20" y="221" width="280" height="122"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="My orientation is correct, even when you change to another tab, rotate the device, then switch back to me ... see? Awesomeness.">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="8uh-w1-YTN">
+                                <rect key="frame" x="20" y="112" width="280" height="111"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="(C) MasterVC" id="V1N-ho-C3O"/>
+                    <connections>
+                        <outlet property="viewLabel" destination="8uh-w1-YTN" id="hbR-lO-50Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rjs-wG-KcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1117" y="2548"/>
+        </scene>
+        <!--Detail C-->
+        <scene sceneID="dSS-2v-OsQ">
+            <objects>
+                <viewController storyboardIdentifier="DemoDetailCController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7Qb-mp-kr5" userLabel="Detail C" customClass="DemoDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wYC-Ul-Wvh">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second View" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zbX-kb-2mk">
+                                <rect key="frame" x="211" y="112" width="345" height="111"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My orientation is correct, even when you change to another tab, rotate the device, then switch back to me ... see? Awesomeness." lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" id="V2d-oY-G8s">
+                                <rect key="frame" x="211" y="221" width="345" height="127"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="(C) DetailVC" id="ugD-ir-kH7"/>
+                    <connections>
+                        <outlet property="viewLabel" destination="zbX-kb-2mk" id="cjY-fx-p5F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rx0-ID-2dW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="587" y="3174"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Split-A.png" width="30" height="30"/>
+        <image name="Split-B.png" width="30" height="30"/>
+        <image name="Split-C.png" width="30" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
