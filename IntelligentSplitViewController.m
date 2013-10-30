@@ -11,84 +11,66 @@
 #import "IntelligentSplitViewController.h"
 #import <objc/message.h>
 
+@interface IntelligentSplitViewController()
+@property (strong, nonatomic) UIView *popoverSuperview;
+@end
+
 @implementation IntelligentSplitViewController
 
-- (id) init {
-	if ((self = [super init])) {
-		NSLog(@"IntelligentSplitViewController using init: and not using a NIB.");
-		// I've actually never attempted to use this class without NIBs, but this should work.
-		
+- (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+	if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
+
 		[[NSNotificationCenter defaultCenter] addObserver:self
 												 selector:@selector(willRotate:)
 													 name:UIApplicationWillChangeStatusBarOrientationNotification object:nil];
 		
 		[[NSNotificationCenter defaultCenter] addObserver:self
 												 selector:@selector(didRotate:)
-													 name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];	
+													 name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
 	}
 	return self;
 }
 
 - (void)awakeFromNib {
 	[super awakeFromNib];
-	//debug_NSLog(@"IntelligentSplitViewController awaking from a NIB: %@", self.title);
-	
+
 	[[NSNotificationCenter defaultCenter] addObserver:self
 											 selector:@selector(willRotate:)
 												 name:UIApplicationWillChangeStatusBarOrientationNotification object:nil];
 
 	[[NSNotificationCenter defaultCenter] addObserver:self
 											 selector:@selector(didRotate:)
-												 name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];	
+												 name:UIApplicationWillChangeStatusBarOrientationNotification object:nil];
 	
 }
 
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-	//debug_NSLog(@"IntelligentSplitViewController loaded: %@", self.title);
-}
-
-- (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-}
-
-- (void)viewDidUnload {
-	//debug_NSLog(@"IntelligentSplitViewController unloaded: %@", self.title);
-
-    [super viewDidUnload];
-}
-
-
 - (void)dealloc {
-	@try {
-		[[NSNotificationCenter defaultCenter] removeObserver:self];
-	}
-	@catch (NSException * e) {
-		NSLog(@"IntelligentSplitViewController DE-OBSERVING CRASHED: %@ ... error:%@", self.title, [e description]);
-	}
-
-	[super dealloc];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Overriden to allow any orientation.
     return YES;
 }
 
+- (NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
+}
 
-- (void)willRotate:(id)sender {
-	if (![self isViewLoaded]) // we haven't even loaded up yet, let's turn away from this place
-		return;
-		  
-	NSNotification *notification = sender;
-	if (!notification)
-		return;
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    // part of a bugfix hack -- for more details, see the Landscape orientation condition of willRotate
+    UIView *popoverSuperview = ((UIPopoverController*)[super valueForKey:@"_hiddenPopoverController"]).contentViewController.view.superview;
+    if (popoverSuperview) {
+        _popoverSuperview = popoverSuperview;
+    }
+}
+
+- (void)willRotate:(NSNotification*)notification {
+	if (![self isViewLoaded] || notification == nil) { return; }
 	
-	UIInterfaceOrientation toOrientation = [[notification.userInfo valueForKey:UIApplicationStatusBarOrientationUserInfoKey] integerValue];
-	//UIInterfaceOrientation fromOrientation = [UIApplication sharedApplication].statusBarOrientation;
+	UIInterfaceOrientation toOrientation = [[notification.userInfo valueForKey:UIApplicationStatusBarOrientationUserInfoKey] intValue];
 
 	UITabBarController *tabBar = self.tabBarController;
 	BOOL notModal = (!tabBar.modalViewController);
@@ -96,87 +78,65 @@
 	
 	NSTimeInterval duration = [[UIApplication sharedApplication] statusBarOrientationAnimationDuration];
 	
-
-	if (!isSelectedTab || !notModal)  { 
-		// Looks like we're not "visible" ... propogate rotation info
-		[super willRotateToInterfaceOrientation:toOrientation duration:duration];
+	if (!isSelectedTab || !notModal)  {
+		// SplitVC is not visible, propogate rotation info:
+		[super willAnimateRotationToInterfaceOrientation:toOrientation duration:duration];
 		
 		UIViewController *master = [self.viewControllers objectAtIndex:0];
-		NSObject *theDelegate = (NSObject *)self.delegate;
+		id<UISplitViewControllerDelegate> theDelegate = self.delegate;
+		
+#define YOU_DONT_FEEL_QUEAZY_ABOUT_THIS_BECAUSE_IT_PASSES_THE_APP_STORE 1
 
-		
-#define YOU_DONT_FEEL_QUEAZY_ABOUT_THIS_BECAUSE_IT_PASSES_THE_APP_STORE 1		
-		
 #if YOU_DONT_FEEL_QUEAZY_ABOUT_THIS_BECAUSE_IT_PASSES_THE_APP_STORE
 		UIBarButtonItem *button = [super valueForKey:@"_barButtonItem"];
 		
-#else //YOU_DO_FEEL_QUEAZY_AND_FOR_SOME_REASON_YOU_PREFER_THE_LESSER_EVIL_____FRIGHTENING_STUFF
+#else
 		UIBarButtonItem *button = [[[[[self.viewControllers objectAtIndex:1] 
 									  viewControllers] objectAtIndex:0] 
-									navigationItem] rightBarButtonItem];
+									navigationItem] leftBarButtonItem];
 #endif
 		
 		if (UIInterfaceOrientationIsPortrait(toOrientation)) {
-			if (theDelegate && [theDelegate respondsToSelector:@selector(splitViewController:willHideViewController:withBarButtonItem:forPopoverController:)]) {
-
-				@try {
-					UIPopoverController *popover = [super valueForKey:@"_hiddenPopoverController"];
-					objc_msgSend(theDelegate, @selector(splitViewController:willHideViewController:withBarButtonItem:forPopoverController:), self, master, button, popover);
-				}
-				@catch (NSException * e) {
-					NSLog(@"There was a nasty error while notifyng splitviewcontrollers of an orientation change: %@", [e description]);
-				}
-			}
+            @try {
+                UIPopoverController *popover = [super valueForKey:@"_hiddenPopoverController"];
+                objc_msgSend(theDelegate, @selector(splitViewController:willHideViewController:withBarButtonItem:forPopoverController:), self, master, button, popover);
+            }
+            @catch (NSException * e) {
+                NSLog(@"Encounterd an error while notifyng splitVC of orientation change: %@", [e description]);
+            }
 		}
 		else if (UIInterfaceOrientationIsLandscape(toOrientation)) {
-			if (theDelegate && [theDelegate respondsToSelector:@selector(splitViewController:willShowViewController:invalidatingBarButtonItem:)]) {
-				@try {
-					objc_msgSend(theDelegate, @selector(splitViewController:willShowViewController:invalidatingBarButtonItem:), self, master, button);
-				}
-				@catch (NSException * e) {
-					NSLog(@"There was a nasty error while notifyng splitviewcontrollers of an orientation change: %@", [e description]);
-				}
-			}
+            @try {
+                objc_msgSend(theDelegate, @selector(splitViewController:willShowViewController:invalidatingBarButtonItem:), self, master, button);
+                
+                if (!master.view.superview) {
+                    
+                    // NOTE: This is a bugfix hack to prevent the master VC from disappearing on certain tabBar events.
+                    // Bug repro: 1) comment out this if statement. 2) Launch the app in Portrait mode. 3) Tap on the 'Colors' tab. 4) tap on the star icon to open the popover. 5) Tap anywhere to close the popover. 6) Tap on the 'Controls' tab. 7) Rotate the app to Landscape mode. 8) Tap on the 'Colors' tab. RESULT: there's an empty spot where the MasterVC is supposed to be!
+                    
+                    [self.popoverSuperview addSubview:master.view];
+                }
+            }
+            @catch (NSException * e) {
+                NSLog(@"Encounterd an error while notifyng splitVC of orientation change: %@", [e description]);
+            }
 		}
 	}
-	
-	//debug_NSLog(@"MINE WillRotate ---- sender = %@  to = %d   from = %d", [sender class], toOrientation, fromOrientation);
 }
 
-/*
-- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
-	[super willRotateToInterfaceOrientation:toInterfaceOrientation duration:duration];
-	//debug_NSLog(@"Theirs --- will rotate");
-}
-*/
-
-- (void)didRotate:(id)sender {
-	if (![self isViewLoaded]) // we haven't even loaded up yet, let's turn away from this place
-		return;
-
-	NSNotification *notification = sender;
-	if (!notification)
-		return;
+- (void)didRotate:(NSNotification*)notification {
+	if (![self isViewLoaded] || notification == nil) { return; }
+    
 	UIInterfaceOrientation fromOrientation = [[notification.userInfo valueForKey:UIApplicationStatusBarOrientationUserInfoKey] integerValue];
-	//UIInterfaceOrientation toOrientation = [UIApplication sharedApplication].statusBarOrientation;
 	
 	UITabBarController *tabBar = self.tabBarController;
 	BOOL notModal = (!tabBar.modalViewController);
 	BOOL isSelectedTab = [self.tabBarController.selectedViewController isEqual:self];
 	
 	if (!isSelectedTab || !notModal)  { 
-		// Looks like we're not "visible" ... propogate rotation info
+		// SplitVC is not visible, propogate rotation info:
 		[super didRotateFromInterfaceOrientation:fromOrientation];
 	}
-	
-	//debug_NSLog(@"MINE DidRotate ---- sender = %@  from = %d   to = %d", [sender class], fromOrientation, toOrientation);
 }
-
-/*
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
-	[super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
-	//debug_NSLog(@"Theirs --- did rotate");
-}
-*/
 
 @end
