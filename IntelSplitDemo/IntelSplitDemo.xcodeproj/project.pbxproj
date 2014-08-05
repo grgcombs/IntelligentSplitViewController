@@ -23,7 +23,22 @@
 		372BDF0D13C2CCA300D40544 /* Split-C@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 372BDF0F13C2CCA300D40544 /* Split-C@2x.png */; };
 		3787FE801991373400DE814D /* IntelSplitDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3787FE7F1991373400DE814D /* IntelSplitDemo.storyboard */; };
 		37A18D38138A14DF00ED157B /* IntelligentSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A18D37138A14DF00ED157B /* IntelligentSplitViewController.m */; };
+		37F9AC091991741B00972304 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F9ABF2199173FE00972304 /* XCTest.framework */; };
+		37F9AC0A1991741B00972304 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		37F9AC0B1991741B00972304 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		37F9AC111991741B00972304 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37F9AC0F1991741B00972304 /* InfoPlist.strings */; };
+		37F9AC131991741B00972304 /* IntelSplitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F9AC121991741B00972304 /* IntelSplitTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37F9AC151991741B00972304 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
+			remoteInfo = IntelSplitDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,6 +63,12 @@
 		3787FE7F1991373400DE814D /* IntelSplitDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = IntelSplitDemo.storyboard; path = Resources/IntelSplitDemo.storyboard; sourceTree = "<group>"; };
 		37A18D36138A14DF00ED157B /* IntelligentSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntelligentSplitViewController.h; path = ../IntelligentSplitViewController.h; sourceTree = SOURCE_ROOT; };
 		37A18D37138A14DF00ED157B /* IntelligentSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IntelligentSplitViewController.m; path = ../IntelligentSplitViewController.m; sourceTree = SOURCE_ROOT; };
+		37F9ABF2199173FE00972304 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		37F9AC081991741B00972304 /* IntelSplitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntelSplitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F9AC0E1991741B00972304 /* IntelSplitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IntelSplitTests-Info.plist"; sourceTree = "<group>"; };
+		37F9AC101991741B00972304 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37F9AC121991741B00972304 /* IntelSplitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntelSplitTests.m; sourceTree = "<group>"; };
+		37F9AC141991741B00972304 /* IntelSplitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IntelSplitTests-Prefix.pch"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* IntelSplitDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "IntelSplitDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +80,16 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F9AC051991741B00972304 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F9AC091991741B00972304 /* XCTest.framework in Frameworks */,
+				37F9AC0B1991741B00972304 /* UIKit.framework in Frameworks */,
+				37F9AC0A1991741B00972304 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* IntelSplitDemo.app */,
+				37F9AC081991741B00972304 /* IntelSplitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +126,7 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				37F9AC0C1991741B00972304 /* IntelSplitTests */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -131,8 +164,28 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765070DF74369002DB57D /* CoreGraphics.framework */,
+				37F9ABF2199173FE00972304 /* XCTest.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37F9AC0C1991741B00972304 /* IntelSplitTests */ = {
+			isa = PBXGroup;
+			children = (
+				37F9AC121991741B00972304 /* IntelSplitTests.m */,
+				37F9AC0D1991741B00972304 /* Supporting Files */,
+			);
+			path = IntelSplitTests;
+			sourceTree = "<group>";
+		};
+		37F9AC0D1991741B00972304 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37F9AC0E1991741B00972304 /* IntelSplitTests-Info.plist */,
+				37F9AC0F1991741B00972304 /* InfoPlist.strings */,
+				37F9AC141991741B00972304 /* IntelSplitTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +208,24 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* IntelSplitDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		37F9AC071991741B00972304 /* IntelSplitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37F9AC171991741B00972304 /* Build configuration list for PBXNativeTarget "IntelSplitTests" */;
+			buildPhases = (
+				37F9AC041991741B00972304 /* Sources */,
+				37F9AC051991741B00972304 /* Frameworks */,
+				37F9AC061991741B00972304 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37F9AC161991741B00972304 /* PBXTargetDependency */,
+			);
+			name = IntelSplitTests;
+			productName = IntelSplitTests;
+			productReference = 37F9AC081991741B00972304 /* IntelSplitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -162,6 +233,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Gregory S Combs";
+				TargetAttributes = {
+					37F9AC071991741B00972304 = {
+						TestTargetID = 1D6058900D05DD3D006BFB54;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "IntelSplitDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -172,12 +249,14 @@
 				Japanese,
 				French,
 				German,
+				en,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* IntelSplitDemo */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* IntelSplitDemo */,
+				37F9AC071991741B00972304 /* IntelSplitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -198,6 +277,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37F9AC061991741B00972304 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F9AC111991741B00972304 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -213,7 +300,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37F9AC041991741B00972304 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F9AC131991741B00972304 /* IntelSplitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37F9AC161991741B00972304 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D6058900D05DD3D006BFB54 /* IntelSplitDemo */;
+			targetProxy = 37F9AC151991741B00972304 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		372BDF0013C2CC8B00D40544 /* Split-A.png */ = {
@@ -270,6 +373,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		37F9AC0F1991741B00972304 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37F9AC101991741B00972304 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -303,6 +414,87 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = IntelSplitDemo;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37F9AC181991741B00972304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IntelSplitDemo.app/IntelSplitDemo";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IntelSplitTests/IntelSplitTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "IntelSplitTests/IntelSplitTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		37F9AC191991741B00972304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IntelSplitDemo.app/IntelSplitDemo";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IntelSplitTests/IntelSplitTests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "IntelSplitTests/IntelSplitTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -351,6 +543,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		37F9AC171991741B00972304 /* Build configuration list for PBXNativeTarget "IntelSplitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37F9AC181991741B00972304 /* Debug */,
+				37F9AC191991741B00972304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "IntelSplitDemo" */ = {
 			isa = XCConfigurationList;

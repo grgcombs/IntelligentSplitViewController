@@ -1,0 +1,10 @@
+language: objective-c
+before_script:
+    - export LANG=en_US.UTF-8
+before_install:
+    - brew update
+    - brew uninstall xctool
+    - brew install xctool
+    - gem update cocoapods
+script:
+    - xctool -project ./IntelSplitDemo/IntelSplitDemo.xcodeproj -scheme IntelSplitTests -sdk iphonesimulator test ONLY_ACTIVE_ARCH=NO
