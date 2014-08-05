@@ -5,6 +5,8 @@ by **Gregory S. Combs**, based on work at:
 - [GitHub](https://github.com/grgcombs/IntelligentSplitViewController)  
 - [TexLege](http://www.texlege.com)  
 
+[![Build Status](https://travis-ci.org/grgcombs/IntelligentSplitViewController.svg?branch=master)](https://travis-ci.org/grgcombs/IntelligentSplitViewController)
+
 What Is This?
 =============
 
