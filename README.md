@@ -10,15 +10,15 @@ by **Gregory S. Combs**, based on work at:
 What Is This?
 =============
 
-This is a UISplitViewController subclass that will intelligently rotate it's contents when placed inside a UITabViewController.
+This is a UISplitViewController subclass that will intelligently rotate it's contents when placed inside a UITabBarController.
 
-Normally the standard UISplitViewController doesn't hear about rotations when it's not the frontmost UI element (selected tab). This is because Apple doesn't think split views should exist within any other view controller ... they think it should be the top-most. So when you rotate the device while switching back and forth between tabs of splitviews, your view controllers and UI elements start drawing in mismatched orientations, because your view hierarchy isn't "supported".  Users don't like this nonsense.  But what do you do if your app *needs*  split views in a tab view?  This.  This is what you do.
+Normally the standard UISplitViewController doesn't hear about rotations when it's not the frontmost UI element (selected tab). This is because Apple believes a UISplitViewController should be the top-most controller in the hierarchy. So when you rotate the device while switching back and forth between tabs of split views, your view controllers and UI elements start drawing in mismatched orientations.  Users don't like this nonsense.  But what do you do if your app *needs* split views within a tab view?  This.  This is what you do.
 
-Note, as we've mentioned, this view controller hierarchy does not exactly fit with Apple's human interface guidelines, but I've successfully released an app to the App Store using this set up (almost exactly), as seen on [TexLege](http://www.texlege.com).
+Note, as we've mentioned, this view controller hierarchy does not exactly fit with Apple's human interface guidelines, but I've successfully released an app to the App Store using this set up (almost exactly), as seen on [TexLege](http://www.texlege.com). Others have successfully released apps using InteeligentSplitViewController, including a few "big name" development companies.
 
-This class and the enclosed demo app assume that you are loading your tabBarController and splitViewControllers via Interface Builder (in a NIB/XIB file).  If you don't like using Interface Builder, then hopefully you know how to incorporate this class without much hand-holding.
+This class and the enclosed demo app assume that you are loading your tabBarController and splitViewControllers via Interface Builder (in a storyboard).  If you don't like using storyboards, then hopefully you know how to incorporate this class without much hand-holding.
 
-I've also included (as a submodule) a more extensive implementation demo/template from Ziophase, [IntelligentTemplate](https://www.github.com/ziophase/IntelligentTemplate).
+I've also included (as a submodule) an alternative implementation demo/template from Ziophase, [IntelligentTemplate](https://www.github.com/ziophase/IntelligentTemplate).
 
 Change Log
 =========================
