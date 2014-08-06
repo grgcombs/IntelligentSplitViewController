@@ -20,8 +20,30 @@ This class and the enclosed demo app assume that you are loading your tabBarCont
 
 I've also included (as a submodule) an alternative implementation demo/template from Ziophase, [IntelligentTemplate](https://www.github.com/ziophase/IntelligentTemplate).
 
+Installation
+=========================
+
+[CocoaPods](/http://guides.cocoapods.org) is easiest way to integrate IntelligentSplitViewController into your project.
+
+Once you have CocoaPods installed, just put something like this to your Podfile:
+
+	platform :ios, "7.1"
+
+	xcodeproj 'MyApplication'
+	link_with 'MyApplication', 'MyApplicationTests'
+
+	pod "IntelligentSplitViewController", '~> 1.1.0'
+
+After that point, you can open your storyboards, XIBs, and/or source files and change your UISplitViewController classes to use the IntelligentSplitViewController subclass instead.
+
+Be sure you set up your split view delegates (to the 'detail' view controller) as needed.  As always, look to the IntelSplitDemo project for additional tips and configuration.
+
 Change Log
 =========================
+
+- 	(8/6/14)  
+
+	Added CocoaPods podspec and installation instructions.  
 
 - 	(8/5/14)  
 

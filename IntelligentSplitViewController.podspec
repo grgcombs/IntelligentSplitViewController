@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name         = 'IntelligentSplitViewController'
   s.version      = '1.1.0'
-  s.license      =  :type => 'Creative Commons (Attribution)'
+  s.license      =  { :type => 'Creative Commons' }
   s.homepage     = 'https://github.com/grgcombs/IntelligentSplitViewController'
-  s.authors      =  'Greg Combs' => 'gcombs@gmail.com'
+  s.authors      =  { 'Greg Combs' => 'gcombs@gmail.com'}
   s.summary      = 'UISplitViewController subclass that works within a UITabBarController'
   s.description  = <<-DESC
                     This is a UISplitViewController subclass that will intelligently rotate it's contents when placed inside a UITabBarController.
