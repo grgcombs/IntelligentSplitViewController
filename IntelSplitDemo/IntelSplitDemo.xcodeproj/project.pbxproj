@@ -53,7 +53,7 @@
 		370A54511991586A002387DE /* DemoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoDetailViewController.m; sourceTree = "<group>"; };
 		370A545319915AB9002387DE /* DemoMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMasterViewController.h; sourceTree = "<group>"; };
 		370A545419915AB9002387DE /* DemoMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoMasterViewController.m; sourceTree = "<group>"; };
-		370A545619916F9D002387DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = IntelSplitDemo/Images.xcassets; sourceTree = "<group>"; };
+		370A545619916F9D002387DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resources/Images.xcassets; sourceTree = "<group>"; };
 		372BDEFF13C2CC8B00D40544 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/Split-A.png"; sourceTree = "<group>"; };
 		372BDF0213C2CC9200D40544 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/Split-A@2x.png"; sourceTree = "<group>"; };
 		372BDF0513C2CC9800D40544 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/Split-B.png"; sourceTree = "<group>"; };
