@@ -64,9 +64,9 @@ Change Log
 License
 =========================
 
-[Under a Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)
 
-![Creative Commons License Badge](http://i.creativecommons.org/l/by/3.0/88x31.png "Creative Commons Attribution")
+![Creative Commons License Badge](https://i.creativecommons.org/l/by/4.0/88x31.png "Creative Commons Attribution")
 
 Alternative, see the included license file for more information on appropriate use of this class.
 
