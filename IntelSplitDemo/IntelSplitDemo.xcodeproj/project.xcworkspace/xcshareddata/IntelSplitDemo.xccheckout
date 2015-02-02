@@ -10,29 +10,29 @@
 	<string>IntelSplitDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>D0830289-911D-4D66-81AF-730D1C300E1F</key>
-		<string>git://github.com/grgcombs/IntelligentSplitViewController.git</string>
+		<key>F25C92A57D9F0F32EA44C965115984B5628A9497</key>
+		<string>https://github.com/grgcombs/IntelligentSplitViewController.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>IntelSplitDemo/IntelSplitDemo.xcodeproj/project.xcworkspace</string>
+	<string>IntelSplitDemo/IntelSplitDemo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>D0830289-911D-4D66-81AF-730D1C300E1F</key>
+		<key>F25C92A57D9F0F32EA44C965115984B5628A9497</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>git://github.com/grgcombs/IntelligentSplitViewController.git</string>
+	<string>https://github.com/grgcombs/IntelligentSplitViewController.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>D0830289-911D-4D66-81AF-730D1C300E1F</string>
+	<string>F25C92A57D9F0F32EA44C965115984B5628A9497</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D0830289-911D-4D66-81AF-730D1C300E1F</string>
+			<string>F25C92A57D9F0F32EA44C965115984B5628A9497</string>
 			<key>IDESourceControlWCCName</key>
 			<string>IntelligentSplitViewController</string>
 		</dict>

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'IntelligentSplitViewController'
-  s.version      = '1.1.0'
+  s.version      = '1.2.0'
   s.license      =  { :type => 'Creative Commons' }
   s.homepage     = 'https://github.com/grgcombs/IntelligentSplitViewController'
   s.authors      =  { 'Greg Combs' => 'gcombs@gmail.com'}

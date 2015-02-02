@@ -23,6 +23,7 @@
 		372BDF0D13C2CCA300D40544 /* Split-C@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 372BDF0F13C2CCA300D40544 /* Split-C@2x.png */; };
 		3787FE801991373400DE814D /* IntelSplitDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3787FE7F1991373400DE814D /* IntelSplitDemo.storyboard */; };
 		37A18D38138A14DF00ED157B /* IntelligentSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A18D37138A14DF00ED157B /* IntelligentSplitViewController.m */; };
+		37C59F6F1A7FD7BC00336E22 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37C59F6E1A7FD7BC00336E22 /* LaunchScreen.xib */; };
 		37F9AC091991741B00972304 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F9ABF2199173FE00972304 /* XCTest.framework */; };
 		37F9AC0A1991741B00972304 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		37F9AC0B1991741B00972304 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -63,6 +64,7 @@
 		3787FE7F1991373400DE814D /* IntelSplitDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = IntelSplitDemo.storyboard; path = Resources/IntelSplitDemo.storyboard; sourceTree = "<group>"; };
 		37A18D36138A14DF00ED157B /* IntelligentSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntelligentSplitViewController.h; path = ../IntelligentSplitViewController.h; sourceTree = SOURCE_ROOT; };
 		37A18D37138A14DF00ED157B /* IntelligentSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IntelligentSplitViewController.m; path = ../IntelligentSplitViewController.m; sourceTree = SOURCE_ROOT; };
+		37C59F6E1A7FD7BC00336E22 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = Resources/LaunchScreen.xib; sourceTree = "<group>"; };
 		37F9ABF2199173FE00972304 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		37F9AC081991741B00972304 /* IntelSplitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntelSplitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F9AC0E1991741B00972304 /* IntelSplitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IntelSplitTests-Info.plist"; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				372BDF0C13C2CCA000D40544 /* Split-C.png */,
 				372BDF0F13C2CCA300D40544 /* Split-C@2x.png */,
 				3787FE7F1991373400DE814D /* IntelSplitDemo.storyboard */,
+				37C59F6E1A7FD7BC00336E22 /* LaunchScreen.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				3787FE801991373400DE814D /* IntelSplitDemo.storyboard in Resources */,
 				372BDF0713C2CC9C00D40544 /* Split-B@2x.png in Resources */,
 				372BDF0A13C2CCA000D40544 /* Split-C.png in Resources */,
+				37C59F6F1A7FD7BC00336E22 /* LaunchScreen.xib in Resources */,
 				372BDF0D13C2CCA300D40544 /* Split-C@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +402,7 @@
 				INFOPLIST_FILE = "IntelSplitDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = IntelSplitDemo;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -413,6 +418,7 @@
 				INFOPLIST_FILE = "IntelSplitDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = IntelSplitDemo;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -551,6 +557,7 @@
 				37F9AC191991741B00972304 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "IntelSplitDemo" */ = {
 			isa = XCConfigurationList;

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="vkk-DZ-kCo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vkk-DZ-kCo">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
         <scene sceneID="Zi8-CU-PTG">
             <objects>
                 <tabBarController storyboardIdentifier="DemoTabController" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vkk-DZ-kCo" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="TkW-Br-9Ue">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -22,17 +23,13 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpF-hW-Fqn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3825" y="1298"/>
+            <point key="canvasLocation" x="-4573" y="29"/>
         </scene>
         <!--Master Nav A-->
         <scene sceneID="kBo-Ka-wR2">
             <objects>
-                <navigationController storyboardIdentifier="DemoMasterANavigationController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rtq-zJ-W8e" userLabel="Master Nav A" sceneMemberID="viewController">
-                    <extendedEdge key="edgesForExtendedLayout"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
-                    <nil key="simulatedTopBarMetrics"/>
+                <navigationController storyboardIdentifier="DemoMasterANavigationController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" hidesBarsWhenKeyboardAppears="YES" id="rtq-zJ-W8e" userLabel="Master Nav A" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="qEY-HX-nWA">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -42,27 +39,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="omg-DA-K2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1600" y="-754"/>
+            <point key="canvasLocation" x="-2526" y="-1714"/>
         </scene>
         <!--Detail Nav A-->
         <scene sceneID="hNe-l7-Ao1">
             <objects>
-                <navigationController storyboardIdentifier="DemoDetailANavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V1D-Mp-9e8" userLabel="Detail Nav A" sceneMemberID="viewController">
-                    <extendedEdge key="edgesForExtendedLayout"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
-                    <nil key="simulatedTopBarMetrics"/>
+                <navigationController storyboardIdentifier="DemoDetailANavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" hidesBarsWhenKeyboardAppears="YES" id="V1D-Mp-9e8" userLabel="Detail Nav A" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="KLI-2c-GIN">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="UeP-Hf-lh9">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="1Kw-KU-EJk" kind="relationship" relationship="rootViewController" id="i7a-yl-hQH"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1e-3U-r5z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-564" y="-244"/>
+            <point key="canvasLocation" x="-2526" y="-987"/>
         </scene>
         <!--Split A-->
         <scene sceneID="ojk-3q-MfV">
@@ -77,17 +73,13 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Owq-If-zTn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2716" y="-356"/>
+            <point key="canvasLocation" x="-3518" y="-1421"/>
         </scene>
         <!--Master Nav B-->
         <scene sceneID="cmc-xj-ag0">
             <objects>
-                <navigationController storyboardIdentifier="DemoMasterBNavigationController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="exo-ts-TN4" userLabel="Master Nav B" sceneMemberID="viewController">
-                    <extendedEdge key="edgesForExtendedLayout"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
-                    <nil key="simulatedTopBarMetrics"/>
+                <navigationController storyboardIdentifier="DemoMasterBNavigationController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" hidesBarsWhenKeyboardAppears="YES" id="exo-ts-TN4" userLabel="Master Nav B" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="acx-eC-wrb">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -97,17 +89,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iTh-Ww-PSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1600" y="890"/>
+            <point key="canvasLocation" x="-2526" y="15"/>
         </scene>
         <!--Detail Nav B-->
         <scene sceneID="IBp-e3-pi9">
             <objects>
                 <navigationController storyboardIdentifier="DemoDetailBNavigationController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PHr-Sk-0Nw" userLabel="Detail Nav B" sceneMemberID="viewController">
-                    <extendedEdge key="edgesForExtendedLayout"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
-                    <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="6It-ut-Sxu">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -117,7 +105,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ad8-gW-ZYk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-419" y="1324"/>
+            <point key="canvasLocation" x="-2526" y="693"/>
         </scene>
         <!--Split B-->
         <scene sceneID="tGD-yD-lVW">
@@ -132,7 +120,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TYc-P1-qUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2690" y="1184"/>
+            <point key="canvasLocation" x="-3518" y="113"/>
         </scene>
         <!--Split C-->
         <scene sceneID="ZLK-5y-GDG">
@@ -147,17 +135,13 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yUq-d5-ZKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2623" y="2590"/>
+            <point key="canvasLocation" x="-3518" y="1543"/>
         </scene>
         <!--Master Nav C-->
         <scene sceneID="zn1-Z3-Iwe">
             <objects>
-                <navigationController storyboardIdentifier="DemoMasterCNavigationController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Yf7-Zp-eKT" userLabel="Master Nav C" sceneMemberID="viewController">
-                    <extendedEdge key="edgesForExtendedLayout"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
-                    <nil key="simulatedTopBarMetrics"/>
+                <navigationController storyboardIdentifier="DemoMasterCNavigationController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" hidesBarsWhenKeyboardAppears="YES" id="Yf7-Zp-eKT" userLabel="Master Nav C" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="6gX-cv-aAi">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -167,17 +151,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMQ-bp-t3z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1600" y="2494"/>
+            <point key="canvasLocation" x="-2526" y="1587"/>
         </scene>
         <!--Detail Nav C-->
         <scene sceneID="VcR-Uv-Hr0">
             <objects>
-                <navigationController storyboardIdentifier="DemoDetailCNavigationController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9gX-cD-BZh" userLabel="Detail Nav C" sceneMemberID="viewController">
-                    <extendedEdge key="edgesForExtendedLayout"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
-                    <nil key="simulatedTopBarMetrics"/>
+                <navigationController storyboardIdentifier="DemoDetailCNavigationController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" hidesBarsWhenKeyboardAppears="YES" id="9gX-cD-BZh" userLabel="Detail Nav C" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="R3Y-vB-Rjv">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -187,232 +167,301 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLD-qR-3cv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-426" y="3028"/>
+            <point key="canvasLocation" x="-2526" y="2282"/>
         </scene>
         <!--Master A-->
         <scene sceneID="Dt6-ds-ULS">
             <objects>
-                <viewController storyboardIdentifier="DemoMasterAController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ssk-Lt-w0X" userLabel="Master A" customClass="DemoMasterViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DemoMasterAController" title="(A) Master" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ssk-Lt-w0X" userLabel="Master A" customClass="DemoMasterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7K2-6k-vJY"/>
+                        <viewControllerLayoutGuide type="bottom" id="I3z-cz-w6x"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="h6A-eS-kjN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" minimumScaleFactor="0.80000001192092896" id="dMb-7u-tO2">
-                                <rect key="frame" x="20" y="221" width="280" height="122"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="My orientation is correct, even when you change to another tab, rotate the device, then switch back to me ... see? Awesomeness.">
-                                        <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Egu-q0-0aB">
+                                <rect key="frame" x="264" y="230" width="73" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="Egu-q0-0aB">
-                                <rect key="frame" x="20" y="112" width="280" height="111"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="My orientation is correct, even when you change to another tab, rotate the device, then switch back to me ... see? Awesomeness." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="dMb-7u-tO2">
+                                <rect key="frame" x="167" y="258" width="267" height="74"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dMb-7u-tO2" firstAttribute="top" secondItem="Egu-q0-0aB" secondAttribute="bottom" constant="8" symbolic="YES" id="3GJ-wv-SmB"/>
+                            <constraint firstItem="Egu-q0-0aB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="h6A-eS-kjN" secondAttribute="leading" constant="20" id="776-Gn-WZk"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Egu-q0-0aB" secondAttribute="trailing" constant="20" id="7L5-Ps-5AY"/>
+                            <constraint firstAttribute="centerX" secondItem="dMb-7u-tO2" secondAttribute="centerX" id="IIN-sm-2G2"/>
+                            <constraint firstItem="dMb-7u-tO2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="h6A-eS-kjN" secondAttribute="leading" constant="20" id="NFW-Ik-TcB"/>
+                            <constraint firstAttribute="centerX" secondItem="Egu-q0-0aB" secondAttribute="centerX" id="XcM-cg-5OP"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dMb-7u-tO2" secondAttribute="trailing" constant="20" id="dZf-Yr-zoB"/>
+                            <constraint firstItem="Egu-q0-0aB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7K2-6k-vJY" secondAttribute="bottom" constant="20" id="e9q-zg-gYD"/>
+                            <constraint firstAttribute="centerY" secondItem="Egu-q0-0aB" secondAttribute="centerY" priority="800" constant="60" id="enh-mR-0l2"/>
+                            <constraint firstItem="I3z-cz-w6x" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dMb-7u-tO2" secondAttribute="bottom" constant="20" id="h3W-m3-Hzi"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="(A) MasterVC" id="ys8-5c-ZN2"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="viewLabel" destination="Egu-q0-0aB" id="1mz-bt-4dx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xb5-c4-nue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1117" y="-676"/>
+            <point key="canvasLocation" x="-1597" y="-1714"/>
         </scene>
         <!--Detail A-->
         <scene sceneID="DBx-mP-HiV">
             <objects>
-                <viewController storyboardIdentifier="DemoDetailAController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1Kw-KU-EJk" userLabel="Detail A" customClass="DemoDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DemoDetailAController" title="(A) Details" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1Kw-KU-EJk" userLabel="Detail A" customClass="DemoDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t6H-IR-N05"/>
+                        <viewControllerLayoutGuide type="bottom" id="bJO-Hq-AEO"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="P3U-MJ-RQ3">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second View" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jxN-kg-74V">
-                                <rect key="frame" x="211" y="112" width="345" height="111"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second View" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxN-kg-74V">
+                                <rect key="frame" x="252" y="230" width="97" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My orientation is correct, even when you change to another tab, rotate the device, then switch back to me ... see? Awesomeness." lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" id="TfE-6d-w6b">
-                                <rect key="frame" x="211" y="221" width="345" height="127"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="My orientation is correct, even when you change to another tab, rotate the device, then switch back to me ... see? Awesomeness." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="TfE-6d-w6b">
+                                <rect key="frame" x="167" y="258" width="267" height="74"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bJO-Hq-AEO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TfE-6d-w6b" secondAttribute="bottom" constant="20" id="10J-hh-tfZ"/>
+                            <constraint firstItem="TfE-6d-w6b" firstAttribute="top" secondItem="jxN-kg-74V" secondAttribute="bottom" constant="8" symbolic="YES" id="1Ub-Xg-E6b"/>
+                            <constraint firstItem="jxN-kg-74V" firstAttribute="top" relation="greaterThanOrEqual" secondItem="t6H-IR-N05" secondAttribute="bottom" constant="20" id="7kF-AY-LX3"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TfE-6d-w6b" secondAttribute="trailing" constant="20" id="9Zy-d9-V9Y"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jxN-kg-74V" secondAttribute="trailing" constant="20" id="Nmx-xc-qb4"/>
+                            <constraint firstAttribute="centerX" secondItem="jxN-kg-74V" secondAttribute="centerX" id="RsT-tL-ZYq"/>
+                            <constraint firstItem="TfE-6d-w6b" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="P3U-MJ-RQ3" secondAttribute="leading" constant="20" id="WNh-w8-JM2"/>
+                            <constraint firstItem="jxN-kg-74V" firstAttribute="centerX" secondItem="TfE-6d-w6b" secondAttribute="centerX" id="bHm-6G-9cY"/>
+                            <constraint firstItem="jxN-kg-74V" firstAttribute="top" relation="greaterThanOrEqual" secondItem="t6H-IR-N05" secondAttribute="bottom" constant="8" symbolic="YES" id="d7V-Ui-eus"/>
+                            <constraint firstItem="jxN-kg-74V" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="P3U-MJ-RQ3" secondAttribute="leading" constant="20" id="f3s-MT-sJI"/>
+                            <constraint firstAttribute="centerY" secondItem="jxN-kg-74V" secondAttribute="centerY" priority="800" constant="60" id="fek-J3-LEd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="(A) DetailVC" id="wC5-xS-yZn"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="viewLabel" destination="jxN-kg-74V" id="zEj-5R-gvz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRP-aM-7vD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="370" y="-166"/>
+            <point key="canvasLocation" x="-1597" y="-987"/>
         </scene>
         <!--Detail B-->
         <scene sceneID="L4X-bH-aak">
             <objects>
-                <viewController storyboardIdentifier="DemoDetailBController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YZ8-Yq-kB3" userLabel="Detail B" customClass="DemoDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DemoDetailBController" title="(B) Details" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YZ8-Yq-kB3" userLabel="Detail B" customClass="DemoDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XIa-TW-Bhh"/>
+                        <viewControllerLayoutGuide type="bottom" id="BSK-2n-bs8"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dJZ-V4-LK6">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second View" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="w2D-tJ-1ea">
-                                <rect key="frame" x="211" y="112" width="345" height="111"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second View" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2D-tJ-1ea">
+                                <rect key="frame" x="252" y="230" width="97" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My orientation is correct, even when you change to another tab, rotate the device, then switch back to me ... see? Awesomeness." lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" id="GSh-OH-p6L">
-                                <rect key="frame" x="211" y="221" width="345" height="127"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="My orientation is correct, even when you change to another tab, rotate the device, then switch back to me ... see? Awesomeness." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GSh-OH-p6L">
+                                <rect key="frame" x="167" y="258" width="267" height="74"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="w2D-tJ-1ea" secondAttribute="centerY" priority="800" constant="60" id="8rv-ST-Ksn"/>
+                            <constraint firstItem="GSh-OH-p6L" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dJZ-V4-LK6" secondAttribute="leading" constant="20" id="9xp-pr-9go"/>
+                            <constraint firstItem="GSh-OH-p6L" firstAttribute="top" secondItem="w2D-tJ-1ea" secondAttribute="bottom" constant="8" symbolic="YES" id="AlP-W0-kcL"/>
+                            <constraint firstItem="GSh-OH-p6L" firstAttribute="centerX" secondItem="w2D-tJ-1ea" secondAttribute="centerX" id="EjI-Wb-12J"/>
+                            <constraint firstItem="w2D-tJ-1ea" firstAttribute="top" relation="greaterThanOrEqual" secondItem="XIa-TW-Bhh" secondAttribute="bottom" constant="20" id="KFz-Nn-8D9"/>
+                            <constraint firstItem="BSK-2n-bs8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GSh-OH-p6L" secondAttribute="bottom" constant="20" id="OAF-j5-F1b"/>
+                            <constraint firstAttribute="centerX" secondItem="w2D-tJ-1ea" secondAttribute="centerX" id="imi-Bb-zmz"/>
+                            <constraint firstItem="w2D-tJ-1ea" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dJZ-V4-LK6" secondAttribute="leading" constant="20" id="jhE-80-PSx"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GSh-OH-p6L" secondAttribute="trailing" constant="20" id="jjj-ic-Kop"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="w2D-tJ-1ea" secondAttribute="trailing" constant="20" id="va4-BT-PCj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="(B) DetailVC" id="4zW-JY-nkz"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="viewLabel" destination="w2D-tJ-1ea" id="TcM-y0-8iv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nqb-V6-Whf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="508" y="1438"/>
+            <point key="canvasLocation" x="-1597" y="693"/>
         </scene>
         <!--Master B-->
         <scene sceneID="47N-Wk-UYi">
             <objects>
-                <viewController storyboardIdentifier="DemoMasterBController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pkt-8R-dY9" userLabel="Master B" customClass="DemoMasterViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DemoMasterBController" title="(B) Master" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pkt-8R-dY9" userLabel="Master B" customClass="DemoMasterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lzy-xM-Y1S"/>
+                        <viewControllerLayoutGuide type="bottom" id="JOH-wR-Ls8"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Anm-qI-931">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" minimumScaleFactor="0.80000001192092896" id="YyW-97-v8R">
-                                <rect key="frame" x="20" y="221" width="280" height="122"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="My orientation is correct, even when you change to another tab, rotate the device, then switch back to me ... see? Awesomeness.">
-                                        <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="wordWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyy-BW-iZH">
+                                <rect key="frame" x="264" y="230" width="73" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="iyy-BW-iZH">
-                                <rect key="frame" x="20" y="112" width="280" height="111"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="My orientation is correct, even when you change to another tab, rotate the device, then switch back to me ... see? Awesomeness." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="YyW-97-v8R">
+                                <rect key="frame" x="167" y="258" width="267" height="74"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JOH-wR-Ls8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="YyW-97-v8R" secondAttribute="bottom" constant="20" id="0Rl-5v-YrQ"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YyW-97-v8R" secondAttribute="trailing" constant="20" id="Arc-2g-FrP"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iyy-BW-iZH" secondAttribute="trailing" constant="20" id="F7I-Kh-dl4"/>
+                            <constraint firstItem="YyW-97-v8R" firstAttribute="top" secondItem="iyy-BW-iZH" secondAttribute="bottom" constant="8" symbolic="YES" id="RCB-xK-OQQ"/>
+                            <constraint firstItem="iyy-BW-iZH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Anm-qI-931" secondAttribute="leading" constant="20" id="WL7-ZF-R5g"/>
+                            <constraint firstItem="iyy-BW-iZH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Lzy-xM-Y1S" secondAttribute="bottom" constant="20" id="mQj-cZ-E6Q"/>
+                            <constraint firstAttribute="centerY" secondItem="iyy-BW-iZH" secondAttribute="centerY" priority="800" constant="60" id="nbh-ma-Jvf"/>
+                            <constraint firstItem="YyW-97-v8R" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Anm-qI-931" secondAttribute="leading" constant="20" id="pGO-bx-Fv6"/>
+                            <constraint firstAttribute="centerX" secondItem="iyy-BW-iZH" secondAttribute="centerX" id="r5v-Nh-ZVT"/>
+                            <constraint firstItem="iyy-BW-iZH" firstAttribute="centerX" secondItem="YyW-97-v8R" secondAttribute="centerX" id="rbZ-wp-rTp"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="(B) MasterVC" id="Mz4-7H-uI6"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="viewLabel" destination="iyy-BW-iZH" id="qO6-gr-Llt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vMu-cn-5LH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1117" y="958"/>
+            <point key="canvasLocation" x="-1597" y="15"/>
         </scene>
         <!--Master C-->
         <scene sceneID="rNS-e5-gUh">
             <objects>
-                <viewController storyboardIdentifier="DemoMasterCController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f1D-RN-5SB" userLabel="Master C" customClass="DemoMasterViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DemoMasterCController" title="(C) Master" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f1D-RN-5SB" userLabel="Master C" customClass="DemoMasterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Enr-xZ-3QJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="bN7-jk-hC0"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XSH-5U-dPm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" minimumScaleFactor="0.80000001192092896" id="KRt-RT-eEv">
-                                <rect key="frame" x="20" y="221" width="280" height="122"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="My orientation is correct, even when you change to another tab, rotate the device, then switch back to me ... see? Awesomeness.">
-                                        <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uh-w1-YTN">
+                                <rect key="frame" x="264" y="230" width="73" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="8uh-w1-YTN">
-                                <rect key="frame" x="20" y="112" width="280" height="111"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My orientation is correct, even when you change to another tab, rotate the device, then switch back to me ... see? Awesomeness." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="KRt-RT-eEv">
+                                <rect key="frame" x="167" y="258" width="267" height="74"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="8uh-w1-YTN" secondAttribute="centerY" constant="60" id="Hrx-r5-zcG"/>
+                            <constraint firstItem="KRt-RT-eEv" firstAttribute="top" secondItem="8uh-w1-YTN" secondAttribute="bottom" constant="8" symbolic="YES" id="PHo-Rz-xMK"/>
+                            <constraint firstItem="8uh-w1-YTN" firstAttribute="centerX" secondItem="KRt-RT-eEv" secondAttribute="centerX" id="S8P-IH-RQX"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KRt-RT-eEv" secondAttribute="trailing" constant="20" id="XNm-Bj-Vrb"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8uh-w1-YTN" secondAttribute="trailing" constant="20" id="XoE-3z-QDT"/>
+                            <constraint firstItem="bN7-jk-hC0" firstAttribute="top" relation="greaterThanOrEqual" secondItem="KRt-RT-eEv" secondAttribute="bottom" constant="20" id="Yst-EP-FOA"/>
+                            <constraint firstItem="bN7-jk-hC0" firstAttribute="top" relation="greaterThanOrEqual" secondItem="KRt-RT-eEv" secondAttribute="bottom" constant="20" id="aNZ-v8-P5a"/>
+                            <constraint firstAttribute="centerX" secondItem="8uh-w1-YTN" secondAttribute="centerX" id="fdd-03-Kap"/>
+                            <constraint firstItem="8uh-w1-YTN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XSH-5U-dPm" secondAttribute="leading" constant="20" id="iJz-mj-lmu"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="(C) MasterVC" id="V1N-ho-C3O"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="viewLabel" destination="8uh-w1-YTN" id="hbR-lO-50Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rjs-wG-KcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1117" y="2548"/>
+            <point key="canvasLocation" x="-1597" y="1587"/>
         </scene>
         <!--Detail C-->
         <scene sceneID="dSS-2v-OsQ">
             <objects>
-                <viewController storyboardIdentifier="DemoDetailCController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7Qb-mp-kr5" userLabel="Detail C" customClass="DemoDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DemoDetailCController" title="(C) Details" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7Qb-mp-kr5" userLabel="Detail C" customClass="DemoDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OLQ-dA-Is0"/>
+                        <viewControllerLayoutGuide type="bottom" id="oKl-9E-jZU"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wYC-Ul-Wvh">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second View" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zbX-kb-2mk">
-                                <rect key="frame" x="211" y="112" width="345" height="111"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second View" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbX-kb-2mk">
+                                <rect key="frame" x="252" y="230" width="97" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My orientation is correct, even when you change to another tab, rotate the device, then switch back to me ... see? Awesomeness." lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" id="V2d-oY-G8s">
-                                <rect key="frame" x="211" y="221" width="345" height="127"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My orientation is correct, even when you change to another tab, rotate the device, then switch back to me ... see? Awesomeness." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="V2d-oY-G8s">
+                                <rect key="frame" x="167" y="258" width="267" height="74"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V2d-oY-G8s" firstAttribute="centerX" secondItem="zbX-kb-2mk" secondAttribute="centerX" id="4LQ-aR-uAX"/>
+                            <constraint firstAttribute="centerY" secondItem="zbX-kb-2mk" secondAttribute="centerY" priority="800" constant="60" id="5u2-rJ-Wzg"/>
+                            <constraint firstItem="zbX-kb-2mk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="OLQ-dA-Is0" secondAttribute="bottom" constant="20" id="6nt-q5-euf"/>
+                            <constraint firstItem="V2d-oY-G8s" firstAttribute="top" secondItem="zbX-kb-2mk" secondAttribute="bottom" constant="8" symbolic="YES" id="ApS-7J-9I5"/>
+                            <constraint firstItem="V2d-oY-G8s" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wYC-Ul-Wvh" secondAttribute="leading" constant="20" id="CgY-1C-wBB"/>
+                            <constraint firstAttribute="centerX" secondItem="zbX-kb-2mk" secondAttribute="centerX" id="NwL-wK-ood"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="V2d-oY-G8s" secondAttribute="trailing" constant="20" id="SfY-og-sdn"/>
+                            <constraint firstItem="oKl-9E-jZU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="V2d-oY-G8s" secondAttribute="bottom" constant="20" id="WgX-NT-nDg"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zbX-kb-2mk" secondAttribute="trailing" constant="20" id="uhP-Af-wDE"/>
+                            <constraint firstItem="zbX-kb-2mk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wYC-Ul-Wvh" secondAttribute="leading" constant="20" id="vb3-vg-7rB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="(C) DetailVC" id="ugD-ir-kH7"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="viewLabel" destination="zbX-kb-2mk" id="cjY-fx-p5F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rx0-ID-2dW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="587" y="3174"/>
+            <point key="canvasLocation" x="-1597" y="2282"/>
         </scene>
     </scenes>
     <resources>
@@ -420,9 +469,4 @@
         <image name="Split-B.png" width="30" height="30"/>
         <image name="Split-C.png" width="30" height="30"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
-    </simulatedMetricsContainer>
 </document>

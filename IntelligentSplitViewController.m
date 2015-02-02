@@ -136,12 +136,14 @@
                     @catch (NSException *e) {
                         NSLog(@"Exception occurred while to identify the split view popover controller: %@", e);
                     }
-					objc_msgSend(theDelegate, @selector(splitViewController:willHideViewController:withBarButtonItem:forPopoverController:), self, master, button, popover);
+                    void (*response)(id, SEL, id, id, id, id) = (void (*)(id, SEL, id, id, id, id)) objc_msgSend;
+                    response(theDelegate, @selector(splitViewController:willHideViewController:withBarButtonItem:forPopoverController:), self, master, button, popover);
                 }
             }
             else if (UIInterfaceOrientationIsLandscape(toOrientation)) {
                 if ([theDelegate respondsToSelector:@selector(splitViewController:willShowViewController:invalidatingBarButtonItem:)]) {
-                    objc_msgSend(theDelegate, @selector(splitViewController:willShowViewController:invalidatingBarButtonItem:), self, master, button);
+                    void (*response)(id, SEL, id, id, id) = (void (*)(id, SEL, id, id, id)) objc_msgSend;
+                    response(theDelegate, @selector(splitViewController:willShowViewController:invalidatingBarButtonItem:), self, master, button);
                 }
             }
         }
