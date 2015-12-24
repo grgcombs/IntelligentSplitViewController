@@ -1,4 +1,4 @@
-IntelligentSplitViewController - It's almost omniscient!
+[Obsoleted] IntelligentSplitViewController - It's almost omniscient!
 =============
 by **Gregory S. Combs**, based on work at:  
   
@@ -6,6 +6,8 @@ by **Gregory S. Combs**, based on work at:
 - [TexLege](http://www.texlege.com)  
 
 [![Build Status](https://travis-ci.org/grgcombs/IntelligentSplitViewController.svg?branch=master)](https://travis-ci.org/grgcombs/IntelligentSplitViewController)
+
+## This is only appropriate for apps on iOS 7 and older
 
 What Is This?
 =============
